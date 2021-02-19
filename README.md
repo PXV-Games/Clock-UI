@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ClockUI : MonoBehaviour
-{
-
-    public class Clock : MonoBehaviour
+    public class ClockUI : MonoBehaviour
     {
         public Transform minuteHandTransform;
         public Transform hourHandTransform;
@@ -26,4 +23,3 @@ public class ClockUI : MonoBehaviour
             minuteHandTransform.eulerAngles = new Vector3(0, 0, -dayNormalized * fullRotationsPerGameDay * hoursPerDay);
         }
     }
-}
